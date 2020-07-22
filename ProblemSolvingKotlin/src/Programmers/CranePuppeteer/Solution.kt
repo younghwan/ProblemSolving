@@ -1,4 +1,4 @@
-package CranePuppeteer
+package Programmers.CranePuppeteer
 
 import java.util.*
 
