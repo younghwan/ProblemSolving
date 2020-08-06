@@ -4,8 +4,6 @@ package DP.JumpGame
 215p
  */
 
-
-
 class Solution {
     //완전탐색 알고리즘
     var n: Int = 3
