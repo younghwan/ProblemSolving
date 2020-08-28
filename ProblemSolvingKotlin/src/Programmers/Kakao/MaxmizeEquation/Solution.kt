@@ -1,4 +1,4 @@
-package Programmers.Kakao.수식최대화
+package Programmers.Kakao.MaxmizeEquation
 
 import kotlin.math.abs
 
@@ -63,6 +63,43 @@ class Solution {
             "+" -> (operand1 + operand2)
             else -> (operand1 - operand2)
         }
+    }
+}
+/*
+해석)
+1. 6번의 경우에서 3개 수식을 처리해야되니까 val op = arrayOf(*+-,*-+,+*-,+-*,-*+,-+*) 를 선언하면 인덱스로 쉽게 접근가능해서 편하다.
+2. 문자열을 나눠야하는데 숫자는 val number = expression.split(+,-,*).toMutableList() 를 통해 얻고
+   수식은 val ex = expression.split(\\d.toRegex()).filter{ it != ""}.toMutableList() 로 filter로 공백은 제외하고 수식만 얻는다.
+3. 완전탐색한다
+ */
+class Solution2 {
+    fun solution(expression: String): Long {
+        val op = arrayOf("*+-","*-+","+*-","+-*","-*+","-+*")
+        val array = mutableListOf<Long>()
+
+        for(i in 0 until 6){
+            val number = expression.split("+","-","*").toMutableList()
+            val ex = expression.split("\\d".toRegex()).filter{ it != ""}.toMutableList()
+
+            for(y in 0 until 3){
+                var x = 0
+                while(x < ex.size) {
+                    if (ex[x] == op[i][y].toString()) {
+                        when(ex[x]){
+                            "*" -> number[x] = (number[x].toLong() * number[x+1].toLong()).toString()
+
+                            "+" -> number[x] = (number[x].toLong() + number[x+1].toLong()).toString()
+
+                            "-" -> number[x] = (number[x].toLong() - number[x+1].toLong()).toString()
+                        }
+                        ex.removeAt(x)
+                        number.removeAt(x+1)
+                    } else x++
+                }
+            }
+            array.add(abs(number[0].toLong()))
+        }
+        return array.max()!!
     }
 }
 

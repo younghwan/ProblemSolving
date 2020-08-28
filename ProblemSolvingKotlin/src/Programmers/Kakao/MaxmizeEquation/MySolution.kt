@@ -1,6 +1,6 @@
-package Programmers.Kakao.수식최대화
+package Programmers.Kakao.MaxmizeEquation
 
-import utils.Permutation
+import KotlinPractice.utils.Permutation
 
 
 /*
@@ -100,7 +100,7 @@ class MySolution {
 //                        first,
 //                        second + 1,
 //                        calculate(inputExpression[first].toString(), inputExpression[second].toString(), c)
-//                    )
+//                    )z
                 }
             }
             println(inputExpression)
