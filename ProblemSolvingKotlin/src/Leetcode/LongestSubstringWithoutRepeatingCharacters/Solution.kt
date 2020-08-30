@@ -1,6 +1,5 @@
 package Leetcode.LongestSubstringWithoutRepeatingCharacters
 
-import java.text.CharacterIterator
 import kotlin.math.max
 
 /*
