@@ -1,5 +1,8 @@
 package Inflearn
 
+import java.util.*
+import kotlin.collections.ArrayList
+
 /*
 
 정보 왕국의 이웃 나라 외동딸 공주가 숲속의 괴물에게 잡혀갔습니다.
@@ -22,3 +25,30 @@ N과 K가 주어질 때 공주를 구하러 갈 왕자의 번호를 출력하는
 ▣ 출력예제
 7
  */
+fun main() {
+    var sc = Scanner(System.`in`)
+    var N = sc.nextInt()
+    var M = sc.nextInt()
+
+    var arr = IntArray(N)
+    var idx = 0
+    var cnt = 0
+    var leave = 0
+    while (leave < N - 1) {
+        if (idx >= N) idx = 0
+        if (arr[idx] == 0) {
+            cnt++
+        }
+        if (cnt == M) {
+            arr[idx] = 1
+            leave++
+            cnt = 0
+        }
+        idx++
+    }
+    for ((idx,i) in arr.withIndex()){
+        if(i == 0){
+            println(idx+1)
+        }
+    }
+}
