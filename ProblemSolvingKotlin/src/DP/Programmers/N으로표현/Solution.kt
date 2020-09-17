@@ -34,9 +34,6 @@ class Solution2 {
         var answer = -1
         val dp = Array(8) { hashSetOf( Array(it + 1) { "1" }.fold("")
         { total, next -> total + next }.toInt() * N ) }
-        for(i in dp){
-            println(i)
-        }
 
         first@for (i in 1..7) {
             for (j in 0 until i) {

@@ -3,7 +3,5 @@ package Samsung.보물상자비밀번호;
 public class Solution {
     public static void main(String[] args) {
 
-
-
     }
 }
