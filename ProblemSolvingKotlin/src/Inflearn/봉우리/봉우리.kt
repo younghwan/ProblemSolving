@@ -1,4 +1,4 @@
-package Inflearn
+package Inflearn.봉우리
 
 import java.util.*
 
