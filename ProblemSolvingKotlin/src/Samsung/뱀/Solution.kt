@@ -30,58 +30,41 @@ fun main() {
         time[i] = j
     }
 
-    var isLive = draw()
     var timeSec = 0
     var posY = 0
     var posX = 0
-    var dir = 0 // 0 = x++ , 1 = y++ , 2 = x-- , 3 = y--
-    while (isLive) {
+    var dx = arrayOf(1, 0, -1, 0)
+    var dy = arrayOf(0, 1, 0, -1)
+    var dir = 0
+    while (true) {
         timeSec++
-        println(timeSec)
-        if (time[timeSec] == "") {
-            if (dir) posX++ else posY++
+//        println(timeSec)
+        posY += dy[dir]
+        posX += dx[dir]
 
-            if (posX >= boardSize || posY >= boardSize) break
-            var isEat = map[posY][posX] == 1
-            snake.run {
-                if (!isEat) {
-                    map[body[0].first][body[0].second] = 0
-                    body.removeAt(0)
-                }
-                body.add(Pair(posY, posX))
+        if (posX >= boardSize || posY >= boardSize || posX < 0 || posY < 0 || map[posY][posX] == 2) break
+
+
+        var isEat = map[posY][posX] == 1
+        snake.run {
+            if (!isEat) {
+                map[body[0].first][body[0].second] = 0
+                body.removeAt(0)
             }
-            isLive = draw()
+            body.add(Pair(posY, posX))
         }
+        draw()
+
         if (time[timeSec] == "D") {
-            posY++
-            if (posX >= boardSize || posY >= boardSize) break
-            var isEat = map[posY][posX] == 1
-            snake.run {
-                if (!isEat) {
-                    map[body[0].first][body[0].second] = 0
-                    body.removeAt(0)
-                }
-                body.add(Pair(posY, posX))
-            }
-            isLive = draw()
-            dir = false
+            dir = (dir + 1) % 4
         }
 
         if (time[timeSec] == "L") {
-            posY++
-            if (posX >= boardSize || posY >= boardSize) break
-            var isEat = map[posY][posX] == 1
-            snake.run {
-                if (!isEat) {
-                    map[body[0].first][body[0].second] = 0
-                    body.removeAt(0)
-                }
-                body.add(Pair(posY, posX))
-            }
-            isLive = draw()
-            dir = false
+            dir = (dir + 3) % 4
         }
     }
+
+    println(timeSec)
 }
 
 fun draw(): Boolean {
@@ -98,15 +81,4 @@ fun draw(): Boolean {
     }
     println()
     return isDraw
-}
-
-fun move(dir: Int){
-    var isEat = map[posY][posX] == 1
-    snake.run {
-        if (!isEat) {
-            map[body[0].first][body[0].second] = 0
-            body.removeAt(0)
-        }
-        body.add(Pair(posY, posX))
-    }
 }
