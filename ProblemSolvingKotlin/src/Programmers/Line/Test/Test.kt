@@ -146,8 +146,6 @@ class Solution {
         }
 
 
-
-
         while (!check()) {
             apply()
             reject()
