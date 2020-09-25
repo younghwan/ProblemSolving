@@ -1,4 +1,4 @@
-package DP.Programmers.N으로표현
+package Study.DP.Programmers.N으로표현
 // DFS 풀이
 class Solution {
     var answer = -1
@@ -28,7 +28,7 @@ class Solution {
     }
 }
 
-// DP 풀이
+// Study.DP 풀이
 class Solution2 {
     fun solution(N: Int, number: Int): Int {
         var answer = -1

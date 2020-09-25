@@ -1,4 +1,4 @@
-package DP.Factorial
+package Study.DP.Factorial
 
 //팩토리얼의 경우 한번 테이블을 만들어두면 편해진다
 

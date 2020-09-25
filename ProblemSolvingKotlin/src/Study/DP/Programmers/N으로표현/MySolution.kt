@@ -1,4 +1,4 @@
-package DP.Programmers.N으로표현
+package Study.DP.Programmers.N으로표현
 
 class MySolution {
     fun solution(N: Int, number: Int): Int {

@@ -1,4 +1,4 @@
-package DP.Patterns.MinMaxReachTarget.MinPathSum
+package Study.DP.Patterns.MinMaxReachTarget.MinPathSum
 
 import java.lang.Integer.min
 

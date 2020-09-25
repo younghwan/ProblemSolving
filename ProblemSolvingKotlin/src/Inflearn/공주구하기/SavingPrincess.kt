@@ -1,7 +1,6 @@
-package Inflearn
+package Inflearn.공주구하기
 
 import java.util.*
-import kotlin.collections.ArrayList
 
 /*
 

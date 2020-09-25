@@ -1,4 +1,4 @@
-package DP.Patterns
+package Study.DP.Patterns
 
 class Doc {
     /**

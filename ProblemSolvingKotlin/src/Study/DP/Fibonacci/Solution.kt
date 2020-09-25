@@ -1,4 +1,4 @@
-package DP.Fibonacci
+package Study.DP.Fibonacci
 
 
 fun recursiveFibo(i: Int): Int {

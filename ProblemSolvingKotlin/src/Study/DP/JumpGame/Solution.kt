@@ -1,4 +1,4 @@
-package DP.JumpGame
+package Study.DP.JumpGame
 /*
 알고리즘 문제해결 전략 1권
 215p
@@ -24,7 +24,7 @@ class Solution {
 
     var check: Array<Array<Int>> = Array(4) { Array(4) { -1 } }
 
-    //DP
+    //Study.DP
     fun jump2(x: Int, y: Int): Int {
         if (x >= arr.size) return 0
         if (y >= arr.size) return 0

@@ -1,4 +1,4 @@
-package DP.ClimbingStairs
+package Study.DP.ClimbingStairs
 
 class Solution {
     fun climbStairs(n: Int): Int {
