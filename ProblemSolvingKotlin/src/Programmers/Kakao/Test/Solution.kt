@@ -34,7 +34,7 @@
 //    }
 //}
 //
-//fun main() {
+//fun CodingTest.Coupang.main() {
 //    var solution = Solution()
 //    solution.solution(		"=.=")
 //}

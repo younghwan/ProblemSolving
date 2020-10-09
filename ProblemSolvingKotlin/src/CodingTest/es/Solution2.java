@@ -1,4 +1,4 @@
-package CodingTest;
+package CodingTest.es;
 
 public class Solution2 {
     public int solution(String S) {

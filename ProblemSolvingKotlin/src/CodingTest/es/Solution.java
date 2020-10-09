@@ -1,7 +1,6 @@
-package CodingTest;
+package CodingTest.es;
 
 import java.util.Arrays;
-import java.util.Collections;
 
 class Solution {
     public int[] solution(String[] S) {

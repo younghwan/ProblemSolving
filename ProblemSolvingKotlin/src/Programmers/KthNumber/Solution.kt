@@ -68,7 +68,7 @@ fun main() {
 
 //data class Person(val name: String, val age: Int)
 //
-//fun main() {
+//fun CodingTest.Coupang.main() {
 //    val people = listOf(Person("Alice", 29), Person("Bob", 31))
 //    println (people.map { it.name })
 //}
