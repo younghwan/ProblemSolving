@@ -19,7 +19,7 @@ fun main() {
 //    for(i in arr){
 //        println(i.contentToString())
 //    }
-    DFS(0,0,0)
+    DFS(0, 0, 0)
 
 }
 
