@@ -1,4 +1,4 @@
-package CodingTest.cp//package Study
+package CodingTest.cpan//package Study
 //
 //fun CodingTest.Coupang.main() {
 //    var arr = intArrayOf(1300000000,700000000,668239490,618239490,568239490,568239486,518239486,157658638,157658634,100000000,100)

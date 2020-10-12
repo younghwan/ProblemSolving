@@ -1,4 +1,4 @@
-package CodingTest.cp//fun CodingTest.Coupang.main() {
+package CodingTest.cpan//fun CodingTest.Coupang.main() {
 //
 //    val ans = IntArray(2)
 //    var max = 0

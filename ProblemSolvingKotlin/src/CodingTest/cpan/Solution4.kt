@@ -1,4 +1,4 @@
-package CodingTest.cp//package Study
+package CodingTest.cpan//package Study
 //
 //var cnt = 0
 //
