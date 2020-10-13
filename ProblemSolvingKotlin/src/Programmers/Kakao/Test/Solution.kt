@@ -34,7 +34,7 @@
 //    }
 //}
 //
-//fun CodingTest.Coupang.main() {
+//fun KotlinPractice.Interview.CodingTest.Coupang.main() {
 //    var solution = Solution()
 //    solution.solution(		"=.=")
 //}
