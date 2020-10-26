@@ -66,8 +66,8 @@ public class Main {
                         return false;
                     }
                     if (map[ny][nx] == 3) break;
-                    ny += curY + dy[i];
-                    nx += curX + dx[i];
+                    ny += dy[i];
+                    nx += dx[i];
                 }
             }
         }
