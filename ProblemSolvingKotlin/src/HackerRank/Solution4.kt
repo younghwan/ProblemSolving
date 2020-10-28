@@ -1,4 +1,4 @@
-package SW
+package HackerRank
 
 fun minX(arr: Array<Int>): Int {
     // Write your code here

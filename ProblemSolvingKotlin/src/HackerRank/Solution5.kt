@@ -1,4 +1,4 @@
-package SW
+package HackerRank
 //Scheduling Error
 //Count String Permutation
 //minimum start Value

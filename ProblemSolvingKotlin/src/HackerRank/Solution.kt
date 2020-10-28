@@ -1,4 +1,4 @@
-package SW
+package HackerRank
 
 fun balancedSum(arr: Array<Int>): Int {
     // Write your code here

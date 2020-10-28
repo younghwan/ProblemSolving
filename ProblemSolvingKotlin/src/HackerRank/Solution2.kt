@@ -1,4 +1,4 @@
-package SW
+package HackerRank
 
 fun lastLetters(word: String): String {
     // Write your code here

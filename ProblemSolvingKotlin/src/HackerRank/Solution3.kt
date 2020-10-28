@@ -1,4 +1,4 @@
-package SW
+package HackerRank
 
 fun isPrime(n: Long): Int {
     // Write your code here
