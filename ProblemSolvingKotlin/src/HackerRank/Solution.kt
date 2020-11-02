@@ -19,6 +19,11 @@ fun balancedSum(arr: Array<Int>): Int {
     return 0
 }
 
+fun balancedSum2(arr: Array<Int>): Int {
+
+    return 0
+}
+
 fun main() {
     var arr = arrayOf(1, 2, 1)
     println(balancedSum(arr))
