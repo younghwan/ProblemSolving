@@ -1,4 +1,4 @@
-package winter;
+package WinterCoding;
 
 import java.util.LinkedList;
 import java.util.Queue;
