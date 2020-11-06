@@ -10,7 +10,7 @@ public class Main2 {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         int tc = Integer.parseInt(in.readLine());
         Tree tree = new Tree();
-        char data[];
+        char[] data;
         for (int i = 0; i < tc; i++) {
             data = in.readLine().replaceAll(" ", "").toCharArray();
             tree.add(data[0], data[1], data[2]);
